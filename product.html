@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Leather Tote - BagsShop Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a href="index.html" class="logo">BagsShop Demo</a>
+                </div>
+                <nav class="header__nav" id="main-nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="index.html#shop" class="nav__link">Shop</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header__actions">
+                    <a href="cart.html" class="cart-icon" id="cart-icon" aria-label="Shopping cart">
+                        <span class="cart-icon__icon">🛒</span>
+                        <span class="cart-icon__count" id="cart-count">0</span>
+                    </a>
+                    <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Product Section -->
+        <section class="product">
+            <div class="container">
+                <div class="product__inner">
+                    <!-- Product Gallery -->
+                    <div class="product__gallery">
+                        <div class="product__main-image">
+                            <div class="image-placeholder product-placeholder">Main Product Image</div>
+                        </div>
+                        <div class="product__thumbnail-grid">
+                            <div class="product__thumbnail">
+                                <div class="image-placeholder thumbnail-placeholder">Thumb 1</div>
+                            </div>
+                            <div class="product__thumbnail">
+                                <div class="image-placeholder thumbnail-placeholder">Thumb 2</div>
+                            </div>
+                            <div class="product__thumbnail">
+                                <div class="image-placeholder thumbnail-placeholder">Thumb 3</div>
+                            </div>
+                            <div class="product__thumbnail">
+                                <div class="image-placeholder thumbnail-placeholder">Thumb 4</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="product__info">
+                        <h1 class="product__title">Classic Leather Tote</h1>
+                        <div class="product__price">$299.00</div>
+                        <div class="product__description">
+                            <p>Timeless elegance meets modern functionality. Our Classic Leather Tote is crafted from premium genuine leather with attention to detail. Perfect for everyday use, this spacious tote features multiple compartments and adjustable straps for comfort.</p>
+                        </div>
+
+                        <!-- Variant Selector -->
+                        <div class="product__variants">
+                            <label class="variant-label">Color</label>
+                            <div class="variant-options">
+                                <button class="variant-option variant-option--active" data-variant="black">Black</button>
+                                <button class="variant-option" data-variant="brown">Brown</button>
+                                <button class="variant-option" data-variant="tan">Tan</button>
+                            </div>
+                        </div>
+
+                        <div class="product__variants">
+                            <label class="variant-label">Size</label>
+                            <div class="variant-options">
+                                <button class="variant-option variant-option--active" data-variant="regular">Regular</button>
+                                <button class="variant-option" data-variant="large">Large</button>
+                            </div>
+                        </div>
+
+                        <!-- Quantity Selector -->
+                        <div class="product__quantity">
+                            <label class="variant-label" for="quantity">Quantity</label>
+                            <div class="quantity-selector">
+                                <button class="quantity-btn" id="quantity-decrease" aria-label="Decrease quantity">−</button>
+                                <input type="number" id="quantity" class="quantity-input" value="1" min="1" aria-label="Quantity">
+                                <button class="quantity-btn" id="quantity-increase" aria-label="Increase quantity">+</button>
+                            </div>
+                        </div>
+
+                        <!-- Add to Cart Button -->
+                        <button class="btn btn--primary btn--large product__add-to-cart" id="add-to-cart">Add to Cart</button>
+
+                        <!-- Product Details -->
+                        <div class="product__details">
+                            <h3 class="product__details-title">Product Details</h3>
+                            <ul class="product__details-list">
+                                <li>Dimensions: 15" W × 13" H × 6" D</li>
+                                <li>Material: Genuine Leather</li>
+                                <li>Hardware: Brass</li>
+                                <li>Interior: Lined with multiple pockets</li>
+                                <li>Strap: Adjustable, 25" drop</li>
+                                <li>Weight: 1.8 lbs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__column">
+                    <h3 class="footer__title">BagsShop Demo</h3>
+                    <p class="footer__text">Premium handbags and accessories for the modern lifestyle.</p>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__heading">Navigation</h4>
+                    <ul class="footer__list">
+                        <li><a href="index.html" class="footer__link">Home</a></li>
+                        <li><a href="index.html#shop" class="footer__link">Shop</a></li>
+                        <li><a href="#" class="footer__link">About</a></li>
+                        <li><a href="#" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__heading">Connect</h4>
+                    <ul class="footer__social">
+                        <li><a href="#" class="footer__link" aria-label="Facebook">Facebook</a></li>
+                        <li><a href="#" class="footer__link" aria-label="Instagram">Instagram</a></li>
+                        <li><a href="#" class="footer__link" aria-label="Twitter">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__heading">Legal</h4>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer__link">Terms of Service</a></li>
+                        <li><a href="#" class="footer__link">Returns</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2024 BagsShop Demo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
