@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - BagsShop Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a href="index.html" class="logo">BagsShop Demo</a>
+                </div>
+                <nav class="header__nav" id="main-nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="index.html#shop" class="nav__link">Shop</a></li>
+                        <li class="nav__item"><a href="index.html#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header__actions">
+                    <a href="cart.html" class="cart-icon" id="cart-icon" aria-label="Shopping cart">
+                        <span class="cart-icon__icon">🛒</span>
+                        <span class="cart-icon__count" id="cart-count">0</span>
+                    </a>
+                    <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Cart Section -->
+        <section class="cart">
+            <div class="container">
+                <h1 class="cart__title">Your Cart</h1>
+                
+                <!-- Empty Cart State -->
+                <div class="cart__empty" id="cart-empty">
+                    <p class="cart__empty-text">Your cart is empty.</p>
+                    <a href="index.html#shop" class="btn btn--primary">Continue Shopping</a>
+                </div>
+
+                <!-- Cart Items -->
+                <div class="cart__content" id="cart-content" style="display: none;">
+                    <div class="cart__items" id="cart-items">
+                        <!-- Cart items will be rendered here by JavaScript -->
+                    </div>
+
+                    <!-- Cart Summary -->
+                    <div class="cart__summary">
+                        <div class="cart__summary-row">
+                            <span class="cart__summary-label">Subtotal</span>
+                            <span class="cart__summary-value" id="cart-subtotal">$0.00</span>
+                        </div>
+                        <div class="cart__summary-row cart__summary-row--total">
+                            <span class="cart__summary-label">Total</span>
+                            <span class="cart__summary-value" id="cart-total">$0.00</span>
+                        </div>
+                        <button class="btn btn--primary btn--large cart__checkout" id="cart-checkout" disabled>
+                            Checkout disabled (Demo only)
+                        </button>
+                        <a href="index.html#shop" class="cart__continue">Continue Shopping</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__column">
+                    <h3 class="footer__title">BagsShop Demo</h3>
+                    <p class="footer__text">Premium handbags and accessories for the modern lifestyle.</p>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__heading">Navigation</h4>
+                    <ul class="footer__list">
+                        <li><a href="index.html" class="footer__link">Home</a></li>
+                        <li><a href="index.html#shop" class="footer__link">Shop</a></li>
+                        <li><a href="index.html#about" class="footer__link">About</a></li>
+                        <li><a href="index.html#contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__heading">Connect</h4>
+                    <ul class="footer__social">
+                        <li><a href="#" class="footer__link" aria-label="Facebook">Facebook</a></li>
+                        <li><a href="#" class="footer__link" aria-label="Instagram">Instagram</a></li>
+                        <li><a href="#" class="footer__link" aria-label="Twitter">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__heading">Legal</h4>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer__link">Terms of Service</a></li>
+                        <li><a href="#" class="footer__link">Returns</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2024 BagsShop Demo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
